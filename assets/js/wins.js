@@ -388,42 +388,44 @@ function seeMore(id){
 	let screenWidth = window.innerWidth;
 	let parent = span.parentElement.parentElement;
 	let winsIconContainer = document.getElementById(`icons-${id}`)
-	let winsItemContainers = winsIconContainer.children;
-	let altTextArray = Object.keys(badgeIcons);
 	if (parent.classList.contains('expanded') && screenWidth > 960) {
 		parent.setAttribute('class', 'project-inner wins-card-text');
 		winsIconContainer.setAttribute('class', 'wins-icon-container');
-		for (let el of winsItemContainers){  //add alt text on each badge icon
-			const pathParts = el.childNodes[1].getAttribute('src').split('/');
-			const filename = pathParts[pathParts.length-1];
-			altTextArray.forEach(function(alt){
-			  if (badgeIcons[alt] == filename){
-					el.childNodes[1].setAttribute('alt', alt);
-				}
-			})	
-		}	
+		restoreBadgeIconAltText(winsIconContainer);
 	} else if(parent.classList.contains('expanded') && screenWidth < 960) {
 		parent.setAttribute('class', 'project-inner wins-card-text');
 		span.setAttribute('class', 'see-more-div');
 		winsIconContainer.setAttribute('class', 'wins-icon-container');
-		for (let el of winsItemContainers){  //add alt text on each badge icon
+		restoreBadgeIconAltText(winsIconContainer);
+	} else {
+		parent.setAttribute('class','project-inner wins-card-text expanded');
+		span.setAttribute('class', 'see-more-div show-less-btn');
+		winsIconContainer.setAttribute('class', 'wins-tablet wins-icon-container');
+		removeBadgeIconAltText(winsIconContainer);
+  		span.parentElement.removeAttribute('hidden');
+	}
+}
+
+function removeBadgeIconAltText(iconContainer){
+	let winsItemContainers = iconContainer.children;
+	for (let el of winsItemContainers){  //remove alt text on badge icons
+		    el.childNodes[1].setAttribute('alt', '');
+	}  
+}
+	
+
+function restoreBadgeIconAltText(iconContainer){  //restore alt text to each badge icon.  Look up alt text in badgeIcons
+	let winsItemContainers = iconContainer.children;
+	let altTextArray = Object.keys(badgeIcons);
+	for (let el of winsItemContainers){  //add alt text on each badge icon
 			const pathParts = el.childNodes[1].getAttribute('src').split('/');
 			const filename = pathParts[pathParts.length-1];
 			altTextArray.forEach(function(alt){
 			  if (badgeIcons[alt] == filename){
 					el.childNodes[1].setAttribute('alt', alt);
 				}
-			})		
-		}	
-	} else {
-		parent.setAttribute('class','project-inner wins-card-text expanded');
-		span.setAttribute('class', 'see-more-div show-less-btn');
-		winsIconContainer.setAttribute('class', 'wins-tablet wins-icon-container');
-		for (let el of winsItemContainers){  //remove alt text on badge icons
-		    el.childNodes[1].setAttribute('alt', " ");
-		}    
-  		span.parentElement.removeAttribute('hidden');
-	}
+		})	
+	}	
 }
 
 function changeSeeMoreBtn(x) {
