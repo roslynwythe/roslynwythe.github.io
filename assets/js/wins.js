@@ -256,21 +256,21 @@
 		cardList.push(otherWinsText.join(", "));
 
 		const SVG_FILE_PATH = `/assets/images/wins-page/wins-badges/`
-
+		
 		const iconContainer = cloneCardTemplate.querySelector(cardSelector);
 
 		cardList.forEach(item => {
 			if (badgeIcons.hasOwnProperty(item)) {
 				iconContainer.insertAdjacentHTML('beforeend',
 					`<div class='${view}-item-container'>
-						<img class="${view}-badge-icon" alt="${view === 'wins' ? item: ''}" src="${SVG_FILE_PATH}${badgeIcons[item]}">
+						<img class="${view}-badge-icon" alt="${view === 'wins' ? item: ''}" src="${SVG_FILE_PATH}${badgeIcons[item]}" data-alttext="${item}" >
 						<div class="${view}-text-bubble" data-wins="font-styling">${item}</div>
 					</div>`
 				)
 			} else if (item !== '') {
 				iconContainer.insertAdjacentHTML('beforeend',
 					`<div class='${view}-item-container'>
-						<img class="${view}-badge-icon" alt="${view === 'wins' ? item: ''}" src="${SVG_FILE_PATH}${otherIcon}">
+						<img class="${view}-badge-icon" alt="${view === 'wins' ? item: ''}" src="${SVG_FILE_PATH}${otherIcon}" data-alttext="${item}">
 						<div class="${view}-text-bubble" data-wins="font-styling">${item}</div>
 					</div>`
 				)
@@ -413,20 +413,15 @@ function removeBadgeIconAltText(iconContainer){
 	}  
 }
 	
-
-function restoreBadgeIconAltText(iconContainer){  //restore alt text to each badge icon.  Look up alt text in badgeIcons
-	let winsItemContainers = iconContainer.children;
-	let altTextArray = Object.keys(badgeIcons);
+function restoreBadgeIconAltText(iconContainer){  //restore alt text to each badge icon.  Alt text is stored in data attribute data-alttext
+	let winsItemContainers = iconContainer.children;  
 	for (let el of winsItemContainers){  //add alt text on each badge icon
-			const pathParts = el.childNodes[1].getAttribute('src').split('/');
-			const filename = pathParts[pathParts.length-1];
-			altTextArray.forEach(function(alt){
-			  if (badgeIcons[alt] == filename){
-					el.childNodes[1].setAttribute('alt', alt);
-				}
-		})	
+			const altText = el.childNodes[1].getAttribute('data-alttext');
+			el.childNodes[1].setAttribute('alt', altText);			
 	}	
 }
+
+
 
 function changeSeeMoreBtn(x) {
 	const span = document.querySelectorAll(".see-more-div");
