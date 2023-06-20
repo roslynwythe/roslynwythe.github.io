@@ -23,7 +23,7 @@ jobs:
         with:
           project: Project Board
           column: 'PR Needs review (Automated Column, do not place items here manually)'
-          repo-token: ${{ secrets.HACKFORLA_BOT_PA_TOKEN }}      
+          repo-token: ${{ secrets.TEST_GHAS }}      
     
     
   # Gathers merged PRs from every location and moves to column 'test-approved-by-reviewer...'
