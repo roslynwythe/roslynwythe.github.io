@@ -4,7 +4,7 @@
   //assigning the google form questions to variables for readability
   //these variables correspond with a question on the google form
   //these variables can be used as a key to access the data
-  const time = "Timestamp"
+  const time = "Timestamp";
   const email = "Email Address"
   const name = "Full name"
   const linkedin_url = "Linkedin URL (optional)"
