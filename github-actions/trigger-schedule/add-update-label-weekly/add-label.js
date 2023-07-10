@@ -15,7 +15,7 @@ threeDayCutoffTime.setDate(threeDayCutoffTime.getDate() - updatedByDays + 5)
 const sevenDayCutoffTime = new Date()
 sevenDayCutoffTime.setDate(sevenDayCutoffTime.getDate() - commentByDays + 7)
 const fourteenDayCutoffTime = new Date()
-fourteenDayCutoffTime.setDate(fourteenDayCutoffTime.getDate() - inactiveUpdatedByDays)
+fourteenDayCutoffTime.setDate(fourteenDayCutoffTime.getDate() - inactiveUpdatedByDays + 14)
 
 /**
  * The main function, which retrieves issues from a specific column in a specific project, before examining the timeline of each issue for outdatedness.
