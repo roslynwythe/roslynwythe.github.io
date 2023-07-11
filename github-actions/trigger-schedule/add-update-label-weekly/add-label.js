@@ -35,6 +35,7 @@ async function main({ g, c }, columnId) {
     const timeline = await getTimeline(issueNum);
     const timelineArray = Array.from(timeline);
     const assignees = await getAssignees(issueNum);
+    console.log('column id= ${columnId}');
     // Error catching.
     if (assignees.length === 0) {
       console.log(`Assignee not found, skipping issue #${issueNum}`)
