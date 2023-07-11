@@ -33,8 +33,8 @@ async function main({ g, c }, columnId) {
   const issueNums = getIssueNumsFromColumn(columnId);
   console.log('columnId=');
   console.log(columnId);
+  console.log('issueNums.length=', issueNums.length);
   for await (let issueNum of issueNums) {
-    console.log('issueNum=', issueNum);
     const timeline = await getTimeline(issueNum);
     const timelineArray = Array.from(timeline);
     const assignees = await getAssignees(issueNum);
