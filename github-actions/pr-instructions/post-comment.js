@@ -16,7 +16,7 @@ async function main({ g, c }, { issueNum, instruction }) {
     github = g;
     context = c;
 
-    postComment(issueNum, instruction);
+    postComment(issueNum, decodeURI(instruction));
 }
 
 

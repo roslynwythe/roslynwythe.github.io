@@ -7,27 +7,25 @@ const fs = require('fs');
  * Uses information from the pull request to create commandline instructions.
  * @param {Object} g - github object
  * @param {Object} c - context object
- * @returns {string} string containing commandline instructions
+ * @returns {string} string containing commandline instructions, URI encoded since the backtick character is not allowed in *  artifact
  */
 function main({ g, c }) {
     github = g;
     context = c;
-    return compositeInstruction();
+    return encodeURI(compositeInstruction());   
 }
 
 function formatPullComment(instruction) {
     const path = './github-actions/pr-instructions/pr-instructions-pull-template.md'
     const text = fs.readFileSync(path).toString('utf-8');
- //   const completedInstructions = text.replace('${commandlineInstructions}', instruction);
-	const completedInstructions = text.replace('${commandlineInstructions}', 'test pull instruction');
+    const completedInstructions = text.replace('${commandlineInstructions}', instruction);
     return completedInstructions;
 }
 
 function formatContribComment(instruction){
 	const path = './github-actions/pr-instructions/pr-instructions-contrib-template.md'
     const text = fs.readFileSync(path).toString('utf-8');
-//    const completedInstructions = text.replace('${previewContribInstructions}', instruction);
-	const completedInstructions = text.replace('[previewContribInstructions]', 'test contrib instruction');
+    const completedInstructions = text.replace('${previewContribInstructions}', instruction);
     return completedInstructions;
 }
 
