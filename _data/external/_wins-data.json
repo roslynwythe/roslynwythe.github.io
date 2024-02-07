@@ -1,1 +1,53 @@
-[{"Timestamp":"2020-08-16T04:55:40.174Z","Email Address":"paridox@hotmail.com","Full name":"Dean Church","Linkedin URL (optional)":"https://www.linkedin.com/in/deanchurch/","Could we use your Linkedin profile picture next to your story?":"Yes","Github URL (optional)":"","Could we use your Github profile picture next to your story?":"No","Select the team(s) you're on":"VRMS","Select your role(s) on the team":"Business Analyst","What is/was your specific role? (optional)":"Product Roadmap construction","When did you join Hack for LA? (optional)":"2019-07-01T07:00:00.000Z","What do you want to celebrate (select all that apply)?":"I worked on an enterprise project, I worked on a project that will help the people of Los Angeles","Give us a brief overview":"I took the skills I have learned from HackforLA projects and applied them at work to orchestrate the launch of an MVP to help with Wildfire Mitigation throughout Southern California","Display?":true,"Homepage?":false},{"Timestamp":"2020-08-16T05:28:29.558Z","Email Address":"paridox@hotmail.com","Full name":"Dean Church","Linkedin URL (optional)":"https://www.linkedin.com/in/deanchurch/","Could we use your Linkedin profile picture next to your story?":"Yes","Github URL (optional)":"","Could we use your Github profile picture next to your story?":"No","Select the team(s) you're on":"VRMS","Select your role(s) on the team":"Business Analyst","What is/was your specific role? (optional)":"","When did you join Hack for LA? (optional)":"2019-07-01T07:00:00.000Z","What do you want to celebrate (select all that apply)?":"I got a new job","Give us a brief overview":"As an over 50 year old career changer I was amazed at how supportive the community at HackforLA was in my finding meaningful employment in the local tech industry.  Through exposure and application of Agile frameworks and user centered design thinking my time and practice at HfLA was instrumental in building my modern application skills competency and confidence.  A direct result of my time at HfLA is that I was able to ace my 45min White Boarding interview where I had to diagram a workflow from end to end and identify areas that would benefit from automation.  ","Display?":true,"Homepage?":false},{"Timestamp":"2020-09-02T23:56:13.840Z","Email Address":"jpbubar@gmail.com","Full name":"Josh Bubar","Linkedin URL (optional)":"https://www.linkedin.com/in/joshua-bubar-25331a118/","Could we use your Linkedin profile picture next to your story?":"Yes","Github URL (optional)":"https://github.com/jbubar","Could we use your Github profile picture next to your story?":"Yes","Select the team(s) you're on":"HackforLA Website","Select your role(s) on the team":"Development","What is/was your specific role? (optional)":"Frontend Web Development","When did you join Hack for LA? (optional)":"","What do you want to celebrate (select all that apply)?":"I produced something for my portfolio, I increased the number of commits on my Github profile","Give us a brief overview":"I built my first page for hack for la! and it is this one!!! ...the wins page","Display?":true,"Homepage?":false}]
+[
+     {
+          "Timestamp": "2020-08-16T04:55:40.174Z",
+          "Email Address": "paridox@hotmail.com",
+          "Full name": "Dean Church",
+          "Linkedin URL (optional)": "https://www.linkedin.com/in/deanchurch/",
+          "Could we use your Linkedin profile picture next to your story?": "Yes",
+          "Github URL (optional)": "",
+          "Could we use your Github profile picture next to your story?": "No",
+          "Select the team(s) you're on": "VRMS",
+          "Select your role(s) on the team": "Business Analyst",
+          "What is/was your specific role? (optional)": "Product Roadmap construction",
+          "When did you join Hack for LA? (optional)": "2019-07-01T07:00:00.000Z",
+          "What do you want to celebrate (select all that apply)?": "I worked on an enterprise project, I worked on a project that will help the people of Los Angeles",
+          "Give us a brief overview": "I took the skills I have learned from HackforLA projects and applied them at work to orchestrate the launch of an MVP to help with Wildfire Mitigation throughout Southern California",
+          "Display?": true,
+          "Homepage?": false
+     },
+     {
+          "Timestamp": "2020-08-16T05:28:29.558Z",
+          "Email Address": "paridox@hotmail.com",
+          "Full name": "Dean Church",
+          "Linkedin URL (optional)": "https://www.linkedin.com/in/deanchurch/",
+          "Could we use your Linkedin profile picture next to your story?": "Yes",
+          "Github URL (optional)": "",
+          "Could we use your Github profile picture next to your story?": "No",
+          "Select the team(s) you're on": "VRMS",
+          "Select your role(s) on the team": "Business Analyst",
+          "What is/was your specific role? (optional)": "",
+          "When did you join Hack for LA? (optional)": "2019-07-01T07:00:00.000Z",
+          "What do you want to celebrate (select all that apply)?": "I got a new job",
+          "Give us a brief overview": "As an over 50 year old career changer I was amazed at how supportive the community at HackforLA was in my finding meaningful employment in the local tech industry.  Through exposure and application of Agile frameworks and user centered design thinking my time and practice at HfLA was instrumental in building my modern application skills competency and confidence.  A direct result of my time at HfLA is that I was able to ace my 45min White Boarding interview where I had to diagram a workflow from end to end and identify areas that would benefit from automation.  ",
+          "Display?": true,
+          "Homepage?": false
+     },
+     {
+          "Timestamp": "2020-09-02T23:56:13.840Z",
+          "Email Address": "jpbubar@gmail.com",
+          "Full name": "Josh Bubar",
+          "Linkedin URL (optional)": "https://www.linkedin.com/in/joshua-bubar-25331a118/",
+          "Could we use your Linkedin profile picture next to your story?": "Yes",
+          "Github URL (optional)": "https://github.com/jbubar",
+          "Could we use your Github profile picture next to your story?": "Yes",
+          "Select the team(s) you're on": "HackforLA Website",
+          "Select your role(s) on the team": "Development",
+          "What is/was your specific role? (optional)": "Frontend Web Development",
+          "When did you join Hack for LA? (optional)": "",
+          "What do you want to celebrate (select all that apply)?": "I produced something for my portfolio, I increased the number of commits on my Github profile",
+          "Give us a brief overview": "I built my first page for hack for la! and it is this one!!! ...the wins page",
+          "Display?": true,
+          "Homepage?": false
+     }
+]
