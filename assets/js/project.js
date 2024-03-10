@@ -14,15 +14,32 @@ let projects = JSON.parse(decodeURIComponent("{{ projects | jsonify | uri_escape
 */
 const scriptTag = document.getElementById("projectScript");
 const projectId = scriptTag.getAttribute("projectId");
-// Search for correct project
-let project = null;
-// Starts at 1 now since the first element is a time stamp
-for (let i = 1; i < projects.length; i++){
-    let itemId = projects[i].id.toString();
-    if(itemId == projectId){
-        project = projects[i];
-        break;
+const project = findProjectById(projectId);
+
+function findProjectById(identification){
+    // Starts at 1 now since the first element is a time stamp
+    for (let i = 1; i < projects.length; i++){
+        let itemId = projects[i].id.toString();
+        if(itemId == identification){
+            return projects[i]
+        }
     }
+} 
+
+// Merge language lists from multiple GitHub repositories associated with a single project
+if (scriptTag.getAttribute('additionalRepoIdNums')) {
+    const additionalRepoIdNums = scriptTag.getAttribute('additionalRepoIdNums').split(',');    
+    let languagesArray = [...project.languages];
+    
+    additionalRepoIdNums.forEach(repoId => {
+        const additionalRepo = findProjectById(repoId);
+        if (additionalRepo && additionalRepo.languages) {
+            languagesArray = [...languagesArray, ...additionalRepo.languages];
+        }
+    });
+ 
+    let uniqueLanguages = new Set(languagesArray);
+    project.languages = Array.from(uniqueLanguages);
 }
 
 /*

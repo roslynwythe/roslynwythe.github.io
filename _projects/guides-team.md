@@ -20,12 +20,20 @@ leadership:
       slack: 'https://hackforla.slack.com/team/U03KBU16APN'
       github: 'https://github.com/edwardsarah'
     picture: https://avatars.githubusercontent.com/edwardsarah
-  - name: Shawn Wong
+  - name: Ayma Rahman
+    github-handle: aymarmsba
     role: Product Manager
     links:
-      slack: 'https://hackforla.slack.com/team/U04MXRWPQ64'
-      github: 'https://github.com/seannwvong'
-    picture: https://avatars.githubusercontent.com/seannwvong
+      slack: https://hackforla.slack.com/team/U06C183Q2HL
+      github: https://github.com/aymarmsba
+    picture: https://avatars.githubusercontent.com/aymarmsba
+  - name: Rhoda Michael
+    github-handle: the-techgurl
+    role: UX Research Lead
+    links:
+      slack: 'https://hackforla.slack.com/team/U05JS9NLNQJ'
+      github: 'https://github.com/the-techgurl'
+    picture: https://avatars.githubusercontent.com/the-techgurl
 links: 
   - name: GitHub
     url: 'https://github.com/hackforla/guides'

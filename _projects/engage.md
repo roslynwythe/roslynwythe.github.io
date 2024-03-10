@@ -35,10 +35,10 @@ links:
     url: 'https://github.com/hackla-engage'
   - name: Slack
     url: 'https://hackforla.slack.com/archives/C6JBH478W'
-  - name: Test Site
-    url: 'https://smstaging.engage.town'
-  - name: Site
-    url: 'https://sm.engage.town'
+  # - name: Test Site
+  #   url: 'https://smstaging.engage.town'
+  # - name: Site
+  #   url: 'https://sm.engage.town'
   # - name: Wiki
   #   url: 'https://github.com/hackla-engage/start-here/wiki'
   - name: Overview
@@ -55,7 +55,9 @@ technologies:
   - MongoDB
 location:
   - Remote
-tools: Hotjar, Google Analytics
+tools:
+  - Hotjar
+  - Google Analytics
 program-area:
   - Citizen Engagement
 partner: Various Los Angeles Neighborhood Councils
@@ -68,4 +70,5 @@ impact: Our platform will make important local conversations much more represent
 sdg: '<strong>16.8:</strong> Broaden and strengthen the awareness and participation of City and local communities, especially those traditionally underserved and marginalized, in the institutions of local and global governance.'
 sdg-image-src: /assets/images/sdg/sdg16.svg
 sdg-image-alt: '16: peace, justice and strong institutions'
+sdg-color-variable: $color-sdg16
 ---

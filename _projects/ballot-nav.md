@@ -37,6 +37,7 @@ leadership:
       github: 'https://github.com/zuriisawesome'
     picture: 'https://avatars.githubusercontent.com/zuriisawesome'
   - name: Jon Lam
+    github-handle:
     role: UX Researcher
     links:
       slack: 'https://hackforla.slack.com/team/U01N6C5GDA8'
@@ -62,7 +63,7 @@ looking:
     skill: Translators (Spanish especially)
 location:
   - Remote
-partner: Code for America, Other Brigades
+partner: Code for San Jose, Code for Atlanta, Open Oakland
 visible: true
 status: Active
 program-area:

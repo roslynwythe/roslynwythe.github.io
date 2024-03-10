@@ -12,20 +12,14 @@ leadership:
       slack: 'https://hackforla.slack.com/team/UE1UG1YFP'
       github: 'https://github.com/ExperimentsInHonesty'
     picture: https://avatars.githubusercontent.com/ExperimentsInHonesty
-  - name: Sarah Sanger
-    role: Merge Team
+  - name: Anjola Jaiyeola
+    role: Product Team
     links:
-      slack: 'https://hackforla.slack.com/team/U02M686LYET'
-      github: 'https://github.com/blulady'
-    picture: https://avatars.githubusercontent.com/blulady
-  - name: Phillip Sanchez
-    role: Merge Team
-    links:
-      slack: 'https://hackforla.slack.com/team/U03UG3VCRK6'
-      github: 'https://github.com/plang-psm'
-    picture: https://avatars.githubusercontent.com/plang-psm
+      slack: https://hackforla.slack.com/team/U052HJ1NMEZ
+      github: https://github.com/anjolaaoluwa
+    picture: https://avatars.githubusercontent.com/u/122532788?v=4
   - name: Roslyn Wythe
-    role: Merge Team
+    role: Dev Lead
     links:
       slack: 'https://hackforla.slack.com/team/U046PD8UT55'
       github: 'https://github.com/roslynwythe'
@@ -36,42 +30,45 @@ leadership:
       slack: 'https://hackforla.slack.com/team/U043LGHSZFT'
       github: 'https://github.com/t-will-gillis'
     picture: https://avatars.githubusercontent.com/t-will-gillis
-  - name: Danny Do
-    role: Merge Team
-    links:
-      slack: 'https://hackforla.slack.com/team/U048G8S2YAK'
-      github: 'https://github.com/Adastros'
-    picture: https://avatars.githubusercontent.com/Adastros
   - name: Christina Or
     role: Merge Team
     links:
       slack: 'https://hackforla.slack.com/team/U04J1GBA6QP'
       github: 'https://github.com/christinaor'
     picture: https://avatars.githubusercontent.com/christinaor
-  - name: Brian Mui
-    role: Merge Team
-    links:
-      slack: https://hackforla.slack.com/team/U04MFMMNJRH
-      github: https://github.com/bootcamp-brian
-    picture: https://avatars.githubusercontent.com/bootcamp-brian
-  - name: MJ Shelton
-    role: Merge Team
-    links:
-      slack: https://hackforla.slack.com/team/U04UG4UQE8G
-      github: https://github.com/mjshelton12
-    picture: https://avatars.githubusercontent.com/mjshelton12
-  - name: Chris Menke
-    role: Merge Team
-    links:
-      slack: https://hackforla.slack.com/team/U04KVG05H3J
-      github: https://github.com/chrismenke45
-    picture: https://avatars.githubusercontent.com/chrismenke45
   - name: Drake Nguyen
     role: Merge Team
     links:
       slack: https://hackforla.slack.com/team/U04TSESVB4J
       github: https://github.com/drakenguyen4000
     picture: https://avatars.githubusercontent.com/drakenguyen4000
+  - name: Ren Demeis-Ortiz
+    role: Merge Team
+    links:
+      slack: https://hackforla.slack.com/team/U059K7A1VFB
+      github: https://github.com/LRenDO
+    picture: https://avatars.githubusercontent.com/LRenDO
+  - name: J Pham
+    github-handle: jphamtv
+    role: Merge Team
+    links:
+      slack: 'https://hackforla.slack.com/team/U064FRUF893'
+      github: 'https://github.com/jphamtv'
+    picture: https://avatars.githubusercontent.com/jphamtv
+  - name: Nikileshwari Prasadh
+    github-handle: Thinking-Panda
+    role: Merge Team
+    links:
+      slack: 'https://hackforla.slack.com/team/U04MJA414LU'
+      github: 'https://github.com/Thinking-Panda'
+    picture: https://avatars.githubusercontent.com/Thinking-Panda
+  - name: Nayan Bhatt
+    github-handle: freaky4wrld
+    role: Merge Team
+    links:
+      slack: 'https://hackforla.slack.com/team/U05TZLLJAUV'
+      github: 'https://github.com/freaky4wrld'
+    picture: https://avatars.githubusercontent.com/freaky4wrld
 links:
   - name: Wiki
     url: 'https://github.com/hackforla/website/wiki'
@@ -99,7 +96,11 @@ technologies:
   - Google Apps Script
   - GitHub Actions
   - VRMS API
-tools: Figma, Google Drive, Zoom, Google Analytics, 1Password
+tools:
+  - Figma
+  - Google Drive
+  - Zoom
+  - Google Analytics
 location:
   # - Santa Monica
   # - Downtown LA

@@ -1,6 +1,8 @@
 ---
 # 'identification' is the 9 digit ID for your repo in the GitHub API.
 identification: '241519642'
+additional-repo-ids:
+  - 275296439
 title: Civic Tech Index
 description: Our goal of the project is to create a comprehensive, searchable index of all civic tech open source software projects around the world. We have created the framework and an interest list. We are currently working on building out the website and other marketing tools that demonstrate the power of the index.
 image: /assets/images/projects/civic-tech-index.png
@@ -14,6 +16,7 @@ leadership:
       github: 'https://github.com/ExperimentsInHonesty'
     picture: https://avatars.githubusercontent.com/ExperimentsInHonesty
   - name: Cynthia Kiser
+    github-handle:
     role: Architectural Advisor
     links: 
       slack: 'https://hackforla.slack.com/team/U04MFPQDN'
@@ -126,8 +129,11 @@ technologies:
 location:
   # - Downtown LA
   - Remote
-partner: Code for America, Yale OpenLab and many more.
-tools: Google docs, Figma, Usability Hub
+
+tools:
+  - Google Docs
+  - Figma
+  - UsabilityHub
 visible: true
 program-area: 
   - Civic Tech Infrastructure

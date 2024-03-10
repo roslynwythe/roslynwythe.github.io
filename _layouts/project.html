@@ -42,10 +42,10 @@ layout: default
                     <strong>Links: </strong>
                     {% for item in page.links %}
                     {% if counter == 1 %}
-                    <a target="_blank" href='{{ item.url }}'> {{ item.name }}</a>
+                    <a target="_blank" href='{{ item.url }}' rel="noopener noreferrer"> {{ item.name }}</a>
                     {% assign counter = counter | minus:1 %}
                     {% elsif counter > 1 %}
-                    <a target="_blank" href='{{ item.url }}'>{{ item.name }}</a>{% if forloop.last == false %}, {% endif %}
+                    <a target="_blank" href='{{ item.url }}' rel="noopener noreferrer">{{ item.name }}</a>{% if forloop.last == false %}, {% endif %}
                     {% endif %}
                     {% endfor %}
                 </p>
@@ -110,10 +110,11 @@ layout: default
                 <p><strong>Impact</strong></p>
                 <p>{{ page.impact }}</p>
             </div>
-            <div class='sdg-description-card'>
+            {%- assign background_color = page.sdg-color-variable |  replace_first: "$", "background-" -%}
+            <div class='sdg-description-card {{ background_color }}'>
                 <h2 class='sdg-card-title title7'>Sustainable Development Goal</h2>
                 <div class='sdg-description-wrapper'>
-                    <img class='sdg-img' src='{{ page.sdg-image-src }}' />
+                    <img class='sdg-img' src='{{ page.sdg-image-src }}'>
                     <div class='sdg-description-grid-item'>{{ page.sdg }}</div>
                 </div>
             </div>
@@ -148,14 +149,14 @@ layout: default
         <div class='resource-list'>
             {% for item in page.leadership %}
             <div class='leader-card'>
-                <a href='{{ item.links.github }}' target='_blank' title='GitHub Profile'><img class='leader-img' src='{{ item.picture }}' /></a>
+                <a href='{{ item.links.github }}' target='_blank' title='GitHub Profile'><img class='leader-img' src='{{ item.picture }}'></a>
                 <div class='leader-description'>
                     {% if page.status == "Completed" and item.links.linkedin %}
-                    <p class='leader-description-field'></p><strong>Name: </strong><a href='{{ item.links.linkedin }}' target='_blank' title='Linkedin Profile'>{{ item.name }}</a></p>
+                    <p class='leader-description-field'></p><strong>Name: </strong><a href='{{ item.links.linkedin }}' target='_blank' title='Linkedin Profile' rel="noopener noreferrer">{{ item.name }}</a></p>
                     {% elsif page.status == "Completed" %}
-                    <p class='leader-description-field'><strong>Name: </strong><a href='{{ item.links.github }}' target='_blank' title='GitHub Profile'>{{ item.name }}</a></p>
+                    <p class='leader-description-field'><strong>Name: </strong><a href='{{ item.links.github }}' target='_blank' title='GitHub Profile' rel="noopener noreferrer">{{ item.name }}</a></p>
                     {% else %}
-                    <p class='leader-description-field'><strong>Name: </strong><a href='{{ item.links.slack }}' target='_blank' title='Slack Direct Message'>{{ item.name }}</a></p>
+                    <p class='leader-description-field'><strong>Name: </strong><a href='{{ item.links.slack }}'target='_blank' title='Slack Direct Message' rel="noopener noreferrer">{{ item.name }}</a></p>
                     {%  endif %}
                     <p class='leader-description-field'><strong>Role: </strong>{{ item.role }}</p>
                 </div>
@@ -196,6 +197,7 @@ layout: default
         src="/assets/js/project.js"
         type="module"
         projectId="{{ page.identification }}"
+        additionalRepoIdNums="{{ page.additional-repo-ids | join: ',' }}"
         imageHero="{{ page.image-hero }}"
         projectTitle="{{ page.title }}">
 </script>
