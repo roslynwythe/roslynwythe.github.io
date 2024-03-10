@@ -113,9 +113,12 @@ tools:
   - Zoom
   - Calendly
   - LinkedIn
-  - 1Password
   - GitHub Wiki
-  - Google Workspace (Sheets, Docs, Forms, Mail Merge, Calendar)
+  - Google Sheets
+  - Google Docs
+  - Google Forms
+  - Google Mail Merge
+  - Google Calendar
   - Google Data Studio
 program-area:
   - Workforce Development

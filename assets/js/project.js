@@ -26,16 +26,22 @@ function findProjectById(identification){
     }
 } 
 
-// Merge the language sections if there's a second repo
-if (scriptTag.getAttribute("secRepoId")){
-    const secRepoId = scriptTag.getAttribute("secRepoId");    
-    const firstLangs = project.languages;
-    const secLangs = findProjectById(secRepoId).languages;
-
-    let languagesArr = [...firstLangs, ...secLangs];
-    let set = new Set(languagesArr);
-    project.languages = Array.from(set);
+// Merge language lists from multiple GitHub repositories associated with a single project
+if (scriptTag.getAttribute('additionalRepoIdNums')) {
+    const additionalRepoIdNums = scriptTag.getAttribute('additionalRepoIdNums').split(',');    
+    let languagesArray = [...project.languages];
+    
+    additionalRepoIdNums.forEach(repoId => {
+        const additionalRepo = findProjectById(repoId);
+        if (additionalRepo && additionalRepo.languages) {
+            languagesArray = [...languagesArray, ...additionalRepo.languages];
+        }
+    });
+ 
+    let uniqueLanguages = new Set(languagesArray);
+    project.languages = Array.from(uniqueLanguages);
 }
+
 /*
   Assign hero background image
 */
