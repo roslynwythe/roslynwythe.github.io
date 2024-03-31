@@ -15,6 +15,6 @@ jobs:
           IN_PROGRESS_COLUMN_ID: ${{ secrets.TEST_COLUMN_ID }}
         with:
           script: |
-            const { TEST_COLUMN_ID } = process.env;
+            const { IN_PROGRESS_COLUMN_ID } = process.env;
             const script = require('./github-actions/trigger-schedule/add-update-label-weekly/add-label.js');
-            script({ g: github, c: context }, TEST_COLUMN_ID);
+            script({ g: github, c: context }, IN_PROGRESS_COLUMN_ID);
