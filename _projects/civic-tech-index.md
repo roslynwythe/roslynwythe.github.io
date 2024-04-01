@@ -10,6 +10,7 @@ alt: "Civic Tech Index"
 image-hero: /assets/images/projects/civic-tech-index-hero.png
 leadership:
   - name: Bonnie Wolfe
+    github-handle:
     role: Agile Coach and Stakeholder Rep
     links:
       slack: 'https://hackforla.slack.com/team/UE1UG1YFP'
@@ -23,6 +24,7 @@ leadership:
       github: 'https://github.com/cnk'
     picture: https://avatars.githubusercontent.com/cnk
   - name: Kevin Phan
+    github-handle:
     role: Product Manager
     links:
       slack: 'https://hackforla.slack.com/team/U02B90U9FPS'
@@ -35,6 +37,7 @@ leadership:
       github: https://github.com/smsada
     picture: https://avatars.githubusercontent.com/smsada
   - name: Briana Bennett
+    github-handle: 
     role: Product Manager
     links:
       slack: 'https://hackforla.slack.com/team/U031BRKV59C'
@@ -89,6 +92,7 @@ leadership:
       github: 'https://github.com/Tekkieware'
     picture: https://avatars.githubusercontent.com/Tekkieware
   - name: Maxwell Countryman Skewes
+    github-handle:
     role: Front End Developer and Tech Lead
     links:
       slack: 'https://hackforla.slack.com/team/U01R6RWQR3L'
