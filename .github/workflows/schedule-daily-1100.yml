@@ -23,7 +23,7 @@ jobs:
     
     - name: Generate github-data.json
       env:
-        token: ${{ secrets.TEST_HACK_FOR_LA_BOT }}
+        token: ${{ secrets.TEST_GITHUB_TOKEN }}
       run: node github-actions/trigger-schedule/github-data/get-project-data.js
 
 
