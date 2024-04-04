@@ -8,7 +8,7 @@ on:
 jobs:
   github_data:
     runs-on: ubuntu-latest
-    if: github.repository == 'hackforla/website'
+    if: github.repository == 'roslynwythe/website'
     
     steps:
     - name: Checkout repository
@@ -23,7 +23,7 @@ jobs:
     
     - name: Generate github-data.json
       env:
-        token: ${{ secrets.TEST_GITHUB_TOKEN }}
+        token: ${{ secrets.GITHUB_TOKEN }}
       run: node github-actions/trigger-schedule/github-data/get-project-data.js
 
 
