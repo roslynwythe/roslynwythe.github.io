@@ -2,6 +2,8 @@
 title: hamburger nav file
 ---
 
+const test2 = "test"
+
 // Retrieve the SVG element
 const svgElement = document.querySelector('#burgerImage svg');
 
