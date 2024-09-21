@@ -118,7 +118,7 @@ You can fork the hackforla/website repository by clicking <a href="https://githu
   <p><strong>First, you find the `fork` button on the top right hand side of the [Hack for LA website repo](https://github.com/hackforla/website)</strong></h4>
   <img src="https://user-images.githubusercontent.com/21162229/137044762-c80f18e8-b785-48fb-a286-81c1117c0178.jpg" />
   <p><strong>Next, a modal may open and request where you want to fork this website repo. Please click on your avatar or your GitHub username</strong></p>
-  <img src="https://user-images.githubusercontent.com/21162229/137045294-3d46b28c-edbb-410c-98f1-13940ecc5c5f.jpg" />
+  <img src="https://user-images.githubusercontent.com/21162229/137045294-3d46b28c-edbb-410c-98f1-13940ecc5c5f.jpg">      
 </details><br>
 
 **Note:** It should create a URL that looks like the following -> `https://github.com/<your_GitHub_user_name>/website`.
@@ -823,21 +823,28 @@ git push --set-upstream origin update-give-link-2093
   <summary><strong>Click here</strong> to see pull request markdown template</summary>
 
   ```
+  <!--  Important! Add the number of the issue you worked on  --> 
   Fixes #replace_this_text_with_the_issue_number
 
   ### What changes did you make?
-    -
-    -
-    -
+  <!--  Note: add lines if needed, and remove any unused lines  -->  
+    - 
+    - 
+    - 
 
   ### Why did you make the changes (we will use this info to test)?
-    -
-    -
-    -
+  <!--  Note: add lines if needed, and remove any unused lines  -->  
+    - 
+    - 
+    - 
 
-  ### Screenshots of Proposed Changes Of The Website  (if any, please do not screen shot code changes)
-  <!-- Note, if your images are too big, use the <img src="" width="" length="" />  syntax instead of ![image](link) to format the images -->
-  <!-- If images are not loading properly, you might need to double check the syntax or add a newline after the closing </summary> tag -->
+  ### Screenshots of Proposed Changes To The Website (if any, please do not include screenshots of code changes)
+  <!--  Notes: 
+    - If there are no visual changes to the website, delete all of the script below and replace with "- No visual changes to the website"
+    - If there are visual changes to the website, include the 'before' and 'after' screenshots below. 
+    - If your images are too big, use the <img src="" width="" length="" />  syntax instead of ![image](link) to format the images
+    - If images are not loading properly, you might need to double check the syntax or add a newline after the closing </summary> tag 
+  --> 
 
   <details>
     <summary>Visuals before changes are applied</summary>

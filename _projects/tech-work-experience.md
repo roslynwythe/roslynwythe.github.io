@@ -6,43 +6,50 @@ image: /assets/images/projects/tech-work-experience.png
 alt: 'Tech Work Experience'
 image-hero: /assets/images/projects/tech-work-experience-hero.png
 leadership:
-  - name: Priyanka Talwar
+  - name: Priyanka Talwar 
+    github-handle:
     role: Product Manager
     links:
       slack: 'https://hackforla.slack.com/team/U029P91EY15'
       github: 'https://github.com/priyatalwar'
     picture: https://avatars.githubusercontent.com/priyatalwar
   - name: Joshua Fishman
+    github-handle:
     role: Product Manager - Engineering
     links:
       slack: 'https://hackforla.slack.com/team/U041G3Y141W'
       github: 'https://github.com/joshfishman'
     picture: https://avatars.githubusercontent.com/joshfishman
   - name: Yingjie Ou
+    github-handle:
     role: UX Research Lead
     links:
       slack: 'https://hackforla.slack.com/team/U03TP1VFALV'
       github: 'https://github.com/pandanista'
     picture: https://avatars.githubusercontent.com/pandanista
   - name: Hyun Joo Sandy Oh
+    github-handle:
     role: UX Research Co-Lead
     links:
       slack: 'https://hackforla.slack.com/team/U03RZE7TTKP'
       github: 'https://github.com/doctorsandy'
     picture: https://avatars.githubusercontent.com/doctorsandy
   - name: Sara Brady
+    github-handle:
     role: UX Research Co-Lead
     links:
       slack: 'https://hackforla.slack.com/team/U0371AXAVUN'
       github: 'https://github.com/bradyse'
     picture: https://avatars.githubusercontent.com/bradyse
   - name: Andrew Salvatore
+    github-handle:
     role: UX Researcher
     links:
       slack: 'https://hackforla.slack.com/team/U04K5R2A7L2'
       github: 'https://github.com/AndrewSalvatore'
     picture: https://avatars.githubusercontent.com/AndrewSalvatore
   - name: Angela Darosh
+    github-handle:
     role: UX Researcher
     links:
       slack: 'https://hackforla.slack.com/team/U03J4ENS09F'
@@ -82,6 +89,7 @@ leadership:
       github: 'https://github.com/Natalie-Aguilar'
     picture: https://avatars.githubusercontent.com/Natalie-Aguilar
   - name: Nino Dzotsenidze
+    github-handle:
     role: UX Researcher
     links:
       slack: 'https://hackforla.slack.com/team/U04MUEYTECR'

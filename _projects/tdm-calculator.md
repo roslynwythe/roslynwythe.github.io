@@ -14,12 +14,14 @@ leadership:
       github: 'https://github.com/ExperimentsInHonesty'
     picture: https://avatars.githubusercontent.com/ExperimentsInHonesty
   - name: John Darragh
+    github-handle:
     role: Architect
     links:
       slack: 'https://hackforla.slack.com/team/UFLDX9V19'
       github: 'https://github.com/entrotech'
     picture: https://avatars.githubusercontent.com/entrotech
   - name: Ebi Imafidon
+    github-handle:
     role: Product Manager
     links:
       slack: 'https://hackforla.slack.com/team/U031EU2E6LB'
@@ -33,6 +35,7 @@ leadership:
       github: 'https://github.com/Noushie'
     picture: https://avatars.githubusercontent.com/Noushie
   - name: Jane He
+    github-handle:
     role: Lead, UX Research
     links:
       slack: 'https://hackforla.slack.com/team/U01RDSRT46R'
