@@ -17,14 +17,13 @@ Our website needs to be free of misspellings so that our reputation for quality 
 
 ### Action Items
 - [ ] For the file `[REPLACE WITH DIRECTORY & NAME OF FILE (e.g., /pages/communities-of-practice.html)]`, correct the spelling from "[REPLACE WITH MISSPELLED WORD]" to "[REPLACE WITH CORRECT SPELLED WORD]", so
-
-  ```
- [REPLACE WITH CURRENT CODE]
-  ```
-  becomes
-  ```
-[REPLACE WITH FUTURE CODE - WHAT IT WILL LOOK LIKE AFTER ITS FIXED]
-  ```
+   ```
+   [REPLACE WITH CURRENT CODE]
+   ```
+   becomes
+   ```
+   [REPLACE WITH FUTURE CODE - WHAT IT WILL LOOK LIKE AFTER ITS FIXED]
+   ```
 - [ ] Use Docker to test changes locally, in both desktop and mobile views
 
 ### Resources
