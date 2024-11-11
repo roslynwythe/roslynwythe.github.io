@@ -49,11 +49,11 @@ leadership:
       github: "https://github.com/K-Gumarama"
     picture: https://avatars.githubusercontent.com/K-Gumarama
   - name: Sanya Nijhawan
-    github-handle:
-    role: Product Manager
+    github-handle: sanya301
+    role: Advisory
     links:
-      slack: "https://hackforla.slack.com/team/U031FLYS561"
-      github: "https://github.com/sanya301"
+      slack: https://hackforla.slack.com/team/U031FLYS561
+      github: https://github.com/sanya301
     picture: https://avatars.githubusercontent.com/sanya301
   - name: Raji Pradheap
     github-handle:
@@ -69,13 +69,6 @@ leadership:
       slack: "https://hackforla.slack.com/team/U049TSDG2SX"
       github: "https://github.com/brycelednar"
     picture: https://avatars.githubusercontent.com/brycelednar
-  - name: Farah Khan
-    github-handle:
-    role: UX/UI Designer
-    links:
-      slack: "https://hackforla.slack.com/team/U01JC8VEKMH"
-      github: "https://github.com/fourmatte"
-    picture: https://avatars.githubusercontent.com/fourmatte
   - name: Eduardo De La Rosa
     github-handle:
     role: UX/UI Designer
@@ -118,6 +111,13 @@ leadership:
       slack: "https://hackforla.slack.com/team/U04BEDM1B2L"
       github: "https://github.com/emeldar"
     picture: https://avatars.githubusercontent.com/emeldar
+  - name: Lola Sarumi
+    github-handle: lola3736
+    role: Lead Product / Project
+    links:
+      slack: https://hackforla.slack.com/team/U06TAL88YUV
+      github: https://github.com/lola3736
+    picture: https://avatars.githubusercontent.com/lola3736    
 links:
   - name: GitHub
     url: "https://github.com/hackforla/homeuniteus"
