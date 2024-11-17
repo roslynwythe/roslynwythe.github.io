@@ -41,13 +41,6 @@ leadership:
       slack: "https://hackforla.slack.com/team/U0103MJB0AZ"
       github: "https://github.com/erikguntner"
     picture: https://avatars.githubusercontent.com/erikguntner
-  - name: Kristelle Gumaru
-    github-handle:
-    role: Product Manager
-    links:
-      slack: "https://hackforla.slack.com/team/U031VJ99ATU"
-      github: "https://github.com/K-Gumarama"
-    picture: https://avatars.githubusercontent.com/K-Gumarama
   - name: Sanya Nijhawan
     github-handle: sanya301
     role: Advisory
